@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: skyblue;
+}   
+
+form {
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 14px;
+
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select,textarea , button {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+
+input[type="radio"],input[type="checkbox"]
+{
+    width: auto;
+    margin-left: 5px;
+}
+#mid
+{
+    margin-top: 15px;
+    display: flex;
+}
+
+#document-type {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#input-container>input {
+    width: 55%;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#anio-nacimiento {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+button {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form rows and columns */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 0 0 48%;
+    margin-bottom: 15px;
+}
+
+.form-column2 {
+    flex: 0 0 33%;
+    margin-bottom: 15px;
+    
+}
+
+
+
+/* Validation styles */
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
