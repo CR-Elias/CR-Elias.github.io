@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             inputField.required = true;
         } else {
             inputField.placeholder = "No disponible";
+            inputField.required = true;
             inputField.readOnly = true;
         }
 
