@@ -1,9 +1,10 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
     padding: 0;
     background-color: skyblue;
+    display: flex;
 }   
 
 form {
@@ -13,12 +14,17 @@ form {
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 600px;
 }
 
 fieldset {
     border: none;
     border-top: 1px solid;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 0px;
+    
 }
 
 legend {
@@ -34,15 +40,14 @@ label {
     margin-bottom: 5px;
 }
 
-input, select,textarea , button {
-    width: 95%;
+input, select, textarea , button {
+    width: 93%;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: vertical;
+    border-color: black;
 }
-
 
 input[type="radio"],input[type="checkbox"]
 {
@@ -55,11 +60,9 @@ input[type="radio"],input[type="checkbox"]
     display: flex;
 }
 
-#document-type {
+#TipoDocumento {
     width: 30%;
     padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -70,7 +73,7 @@ input[type="radio"],input[type="checkbox"]
     font-size: 14px;
 }
 
-#anio-nacimiento {
+#AnioNacimiento {
     width: 100%;
     border-radius: 4px;
     font-size: 14px;
@@ -95,11 +98,14 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .form-column {
     flex: 0 0 48%;
     margin-bottom: 15px;
+
+
 }
 
 .form-column2 {
@@ -109,13 +115,27 @@ button:hover {
 }
 
 
-
 /* Validation styles */
-input:valid, select:valid, textarea:valid {
-    border-color: green;
-}
 
 input:invalid, select:invalid, textarea:invalid {
     border-color: red;
 }
 
+.counter {
+    bottom: -20px;
+    right: 0;
+    font-size: 12px;
+    color: #555;
+}
+.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    display: none;
+  }
+#ErrorZone{
+    background-color: rgb(17, 158, 214);
+    width: 350px;padding: 20px ;
+    border:  1px solid black;
+    display: none;
+
+}
